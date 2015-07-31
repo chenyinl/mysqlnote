@@ -21,3 +21,6 @@ Find the parameter "datadir", which is /var/lib/mysql
 Run a command to see the size of that directory
 
 sudo du -h /var/lib/mysql
+
+Replace http with https in the value:
+update wp_devhfrpostmeta set meta_value= REPLACE(meta_value, 'http://', 'https://');
